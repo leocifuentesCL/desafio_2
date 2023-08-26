@@ -7,13 +7,25 @@ const Form = () => {
   const [showAlert, setShowAlert] = useState(false)
   const [email, setEmail] = useState('');
 
+  // aquí usé el sistema de expresiones regulares que enseñó mi profesor anterior, en la generación G-32.
+  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+
   const handleConfirmPassword = () => {
     if (pass === confirmPass) {
       setShowAlert(true);
     } else {
       setShowAlert(false);
     }
+  //aquí llamo a la función para confirmar la expresión regular.
+    handleConfirmEmail();
   };
+
+  // aquí creé la función que confirma la expresión regular definida en línea 10.
+  const handleConfirmEmail = () => {
+    if (emailRegex.test(email) === false) {
+      alert('Ingresa un correo válido');
+    }
+  }
 
   const handlerSend = (e) => {
     handleConfirmPassword();
