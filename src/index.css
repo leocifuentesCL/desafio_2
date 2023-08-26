@@ -1,0 +1,52 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+
+/*aqui los estilos funcionaban mejor*/
+.register-card {
+    width: 400px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.card-title {
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    /*border: solid 5px black;*/
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    border: solid 1px rgb(182, 170, 170);
+    border-radius: 30px;
+    font-size: 45px;
+    padding: 8px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
